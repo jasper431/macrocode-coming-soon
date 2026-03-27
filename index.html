@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header class="section">
+            <h1>Lesson 1: Introduction</h1>
+            <p>Write a Python script to print a greeting, then click "Run Code".</p>
+            <button id="run-btn">Run Code</button>
+        </header>
+
+        <section class="section">
+            <div class="label">Editor</div>
+            <div id="editor" class="window editor" contenteditable="true"># Write your code here...
+print("Hello from the editor!")</div>
+        </section>
+
+        <section class="section">
+            <div class="label">Console</div>
+            <div id="console" class="window console">>>> Press run to execute...</div>
+        </section>
+
+        <footer class="section feedback">
+            <span id="feedback-text"><strong>System Feedback:</strong> Awaiting execution...</span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
