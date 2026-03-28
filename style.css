@@ -38,6 +38,9 @@ body {
     height: 430px; /* Approx 20 lines of 18pt font */
     overflow-y: auto;
     white-space: pre;
+    /* Ensuring the editor and console specifically use it */
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-ligatures: normal; /* This enables the cool coding arrows like -> or != */
 }
 
 .editor {
@@ -78,4 +81,11 @@ body {
 #run-btn:hover {
     background-color: #444;
     border-color: #777;
+}
+
+
+body, button, .window, .hover-pane {
+    font-family: 'JetBrains Mono', monospace;
+    /* Optional: JetBrains Mono looks best with a slightly tighter line-height */
+    line-height: 1.5;
 }
