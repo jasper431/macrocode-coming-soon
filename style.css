@@ -42,12 +42,13 @@ body {
 
 .editor {
     color: #dcdcdc;
-    outline: none;
+    outline: solid 4px #ff8457;
 }
 
 .console {
     background-color: #000;
     color: #4af626; /* Classic terminal green */
+    outline: solid 4px #52a7ff;
 }
 
 .feedback {
