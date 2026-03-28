@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>macroCode Python</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js"></script>
 </head>
 <body>
-    <header class="section">
-        <img id="logo" src="macrocode_logo.png"/>
-        <div class="header-content">
-            <h1>Lesson 1: Introduction</h1>
-            <p>Write a Python script to print a greeting, then click "Run Code".</p>
-        </div>
-    
-        <div class="button-group">
-            <button id="run-btn" class="primary-btn">Run Code</button>
-            <div class="help-wrapper">
-                <button class="secondary-btn">Lexicon</button>
-                <div class="hover-pane"><strong>Syntax:</strong> variable_name = value</div>
+    <div class="container">
+        <header class="section">
+            <img id="logo" src="macrocode_logo.png" style="max-width: 200px;"/>
+            <div class="header-content">
+                <h1>Lesson 1: Introduction</h1>
+                <p>Write a Python script to print a greeting, then click "Run Code".</p>
             </div>
         
-            <div class="help-wrapper">
-                <button class="secondary-btn">Example</button>
-                <div class="hover-pane"><code>my_data = 50</code></div>
+            <div class="button-group">
+                <button id="run-btn" class="primary-btn">Run Code</button>
+                <div class="help-wrapper">
+                    <button class="secondary-btn">Lexicon</button>
+                    <div class="hover-pane"><strong>Syntax:</strong> variable_name = value</div>
+                </div>
+            
+                <div class="help-wrapper">
+                    <button class="secondary-btn">Example</button>
+                    <div class="hover-pane"><code>my_data = 50</code></div>
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="section">
+        </header>
+
+        <section class="section">
             <div class="label">Editor</div>
             <div id="editor" class="window editor" contenteditable="true"># Write your code here...
 print("Hello from the editor!")</div>
@@ -45,8 +48,6 @@ print("Hello from the editor!")</div>
         <footer class="section feedback">
             <span id="feedback-text"><strong>System Feedback:</strong> Awaiting execution...</span>
         </footer>
-    </div>
-
-    <script src="script.js"></script>
+    </div> <script src="script.js"></script>
 </body>
 </html>
