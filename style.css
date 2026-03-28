@@ -57,6 +57,10 @@ body {
     font-size: 16px;
 }
 
+#logo {
+    width: 200px;
+}
+
 #run-btn {
     background-color: #333;
     color: #fff;
