@@ -11,16 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="container">
-        <header class="section">
-            <img id="logo" src="macrocode_logo.png"/>
+    <img id="logo" src="macrocode_logo.png"/>
+    <header class="section">
+        <div class="header-content">
             <h1>Lesson 1: Introduction</h1>
             <p>Write a Python script to print a greeting, then click "Run Code".</p>
-            <button id="run-btn">Run Code</button>
-        </header>
-
-        <section class="section">
+        </div>
+    
+        <div class="button-group">
+            <button id="run-btn" class="primary-btn">Run Code</button>
+            <div class="help-wrapper">
+                <button class="secondary-btn">Lexicon</button>
+                <div class="hover-pane"><strong>Syntax:</strong> variable_name = value</div>
+            </div>
+        
+            <div class="help-wrapper">
+                <button class="secondary-btn">Example</button>
+                <div class="hover-pane"><code>my_data = 50</code></div>
+            </div>
+        </div>
+    </header>
+    <section class="section">
             <div class="label">Editor</div>
             <div id="editor" class="window editor" contenteditable="true"># Write your code here...
 print("Hello from the editor!")</div>
