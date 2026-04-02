@@ -1,7 +1,7 @@
 // 1. GLOBAL CONFIGURATION
 const JSONBIN_CONFIG = {
-    apiKey: '$2b$10$YOUR_ACTUAL_API_KEY', 
-    binId: 'YOUR_BIN_ID',                
+    apiKey: '$2a$10$MvxMhqL6xp.y1XdutK0AKevd6FYKvJVryZQO0NApRbulAECDgitdm', 
+    binId: '69ce80c0856a682189f2d203',                
 };
 
 let currentUnitData = null; // Stores the active JSON unit
